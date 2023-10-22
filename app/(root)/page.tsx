@@ -1,11 +1,9 @@
-import Image from 'next/image';
+import { Home } from "@/views/Home";
 
-import SiteHeader from '@/components/layout/SiteHeader';
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className='flex min-h-screen flex-col'>
-      <SiteHeader />
-    </main>
+    <div className="debug-screens">
+      <Home />
+    </div>
   );
 }

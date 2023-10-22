@@ -8,8 +8,8 @@ import {
   HeartIcon,
   SearchIcon,
   ShoppingCartIcon,
-} from "@/assets/icons";
-import logo from "@/assets/images/furniro-logo.svg";
+} from "@/components/icons";
+import logo from '@/public/images/furniro-logo.svg'
 
 const SiteHeader = () => {
   return (
