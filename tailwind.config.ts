@@ -33,13 +33,19 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: {
+          500: "#B88E2F",
+        },
+        secondary: "#FFF3E3",
+        gray: {
+          300: "#666666",
+          500: "#333333",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: "#B88E2F",
-        secondary: "#FFF3E3",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -86,6 +92,9 @@ module.exports = {
       },
       backgroundImage: {
         interior: "url('/images/interior-bg.png')",
+        "type-dining": "url('/images/type-dining.jpg')",
+        "type-living": "url('/images/type-living.jpg')",
+        "type-bedroom": "url('/images/type-bedroom.jpg')",
       },
     },
   },

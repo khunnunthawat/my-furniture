@@ -24,24 +24,24 @@ const SiteHeader = () => {
           </div>
         </Link>
         <nav className="flex items-center space-x-4 font-medium max-lg:hidden lg:space-x-6">
-          <Link href="#" className="transition-colors hover:text-primary">
+          <Link href="#" className="transition-colors hover:text-primary-500">
             Home
           </Link>
           <Link
             href="#"
-            className="text-muted-foreground transition-colors hover:text-primary"
+            className="text-muted-foreground transition-colors hover:text-primary-500"
           >
             Shop
           </Link>
           <Link
             href="#"
-            className="text-muted-foreground transition-colors hover:text-primary"
+            className="text-muted-foreground transition-colors hover:text-primary-500"
           >
             About
           </Link>
           <Link
             href="#"
-            className="text-muted-foreground transition-colors hover:text-primary"
+            className="text-muted-foreground transition-colors hover:text-primary-500"
           >
             Contact
           </Link>
