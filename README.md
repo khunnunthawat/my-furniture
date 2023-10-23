@@ -1,3 +1,7 @@
+LINK DESIGN : [eCommerce Website | Interior- Furniture Website Design](https://www.behance.net/gallery/175046315/eCommerce-Website-Interior-Furniture-Website-Design)
+
+![Furnio](https://github.com/khunnunthawat/my-furniture/assets/68588944/27c45d9f-1760-437f-87f5-615987bcba45)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
