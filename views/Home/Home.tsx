@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Button } from "@/components/ui";
+import { CompareIcon, FavoriteIcon, ShareIcon } from "@/components/icons";
 
 import { cn } from "@/lib/utils";
 
@@ -22,18 +23,18 @@ const rangType = [
 export default function Home() {
   return (
     <>
-      <div className="bg-interior relative mb-14 flex h-[716px] w-full items-center justify-end bg-cover bg-center">
+      {/* <div className="relative mb-14 flex h-[716px] w-full items-center justify-end bg-interior bg-cover bg-center">
         <div className="container flex md:absolute md:justify-center lg:justify-end xl:static xl:right-6">
           <div className="bg-secondary px-10 pb-6 pt-8 md:pb-9 md:pt-16">
             <div className="flex max-w-[674px] flex-col items-start">
               <span className="text-base font-medium tracking-widest text-gray-500">
                 New Arrival
               </span>
-              <h1 className="xs:text-4xl text-primary-500 my-4 font-medium lg:text-6xl">
+              <h1 className="my-4 font-medium text-primary-500 xs:text-4xl lg:text-6xl">
                 Discover Our <br />
                 New Collection
               </h1>
-              <p className="xs:text-sm mb-8 text-gray-500 lg:text-lg">
+              <p className="mb-8 text-gray-500 xs:text-sm lg:text-lg">
                 Home is an epitome of comfort that you can turn it into multiple
                 functional spaces. Let a piece of furniture you select express
                 your identity and reflect your modern lifestyle.
@@ -70,7 +71,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="container my-14">
         <div className="flex w-full flex-col items-center justify-center">
           <h1 className="mb-8 text-center text-[40px] font-bold text-gray-500">
@@ -86,17 +87,26 @@ export default function Home() {
                   alt=""
                   className="object-cover"
                 />
-                <div className="absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center opacity-0 transition duration-300 group-hover:opacity-100">
+                <div className="absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center transition duration-300 group-hover:opacity-100">
                   <Button variant="outline" className="mb-6 w-[200px]">
                     Outline
                   </Button>
                   <div className="inline-flex cursor-pointer space-x-5 text-white">
-                    <span>Share</span>
-                    <span>Compare</span>
-                    <span>Like</span>
+                    <div className="inline-flex items-center">
+                      <ShareIcon className="mr-1" />
+                      Share
+                    </div>
+                    <div className="inline-flex items-center">
+                      <CompareIcon className="mr-1" />
+                      Compare
+                    </div>
+                    <div className="inline-flex items-center">
+                      <FavoriteIcon className="mr-1" />
+                      Like
+                    </div>
                   </div>
                 </div>
-                <div className="absolute left-0 top-0 h-full w-full bg-gray-500 bg-opacity-70 opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="absolute left-0 top-0 h-full w-full bg-gray-500 bg-opacity-70 transition duration-500 group-hover:opacity-100" />
                 <div className="h-[145px] bg-gray-white p-4">
                   <div className="flex flex-col">
                     <div className="mb-2 text-2xl font-semibold text-gray-500">
