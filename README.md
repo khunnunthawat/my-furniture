@@ -1,4 +1,6 @@
-LINK DESIGN : [eCommerce Website | Interior- Furniture Website Design](https://www.behance.net/gallery/175046315/eCommerce-Website-Interior-Furniture-Website-Design)
+LINK DESIGN
+- [eCommerce Website | Interior- Furniture Website Design](https://www.behance.net/gallery/175046315/eCommerce-Website-Interior-Furniture-Website-Design)
+- [FIGMA DESIGN](https://www.figma.com/community/file/1252561852327562039/ecommerce-website-web-page-design-ui-kit-interior-landing-page)
 
 ![Furnio](https://github.com/khunnunthawat/my-furniture/assets/68588944/27c45d9f-1760-437f-87f5-615987bcba45)
 
