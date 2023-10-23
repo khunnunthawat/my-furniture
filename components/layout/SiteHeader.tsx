@@ -13,7 +13,7 @@ import logo from '@/public/images/furniro-logo.svg'
 
 const SiteHeader = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-white">
+    <header className="sticky top-0 z-40 w-full bg-white">
       <div className="container flex h-20 items-center justify-between space-x-4 sm:space-x-0">
         <Link href="/" className="cursor-pointer">
           <div className="flex items-center space-x-2">
