@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
+    "classnames": "^2.3.2",
     "clsx": "^2.0.0",
     "lucide-react": "^0.288.0",
     "next": "13.5.6",
@@ -19,6 +20,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "@locator/babel-jsx": "^0.4.2",
+    "@locator/runtime": "^0.4.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -26,7 +30,10 @@
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
     "postcss": "^8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3",
+    "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^5"
   }
 }

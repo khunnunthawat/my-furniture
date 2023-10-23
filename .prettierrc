@@ -1,0 +1,5 @@
+{
+  "jsxBracketSameLine": false,
+  "jsxSinglqQuote": false,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
