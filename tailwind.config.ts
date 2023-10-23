@@ -38,8 +38,15 @@ module.exports = {
         },
         secondary: "#FFF3E3",
         gray: {
+          100: "#9F9F9F",
           300: "#666666",
           500: "#333333",
+        },
+        success: {
+          500: "#9F9F9F",
+        },
+        danger: {
+          500: "#E97171",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
