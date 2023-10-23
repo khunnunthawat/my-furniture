@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Button } from "../../components/ui";
 
 const rangType = [
   {
@@ -34,9 +35,7 @@ export default function Home() {
                 functional spaces. Let a piece of furniture you select express
                 your identity and reflect your modern lifestyle.
               </p>
-              <button className="bg-primary-500 inline-block border border-transparent px-20 py-6 text-base font-medium text-white hover:bg-primary/75 hover:text-gray-500">
-                BUY NOW
-              </button>
+              <Button size="large" className="px-20 py-6">BUY NOW</Button>
             </div>
           </div>
         </div>
