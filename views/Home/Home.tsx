@@ -1,5 +1,8 @@
+import Image from "next/image";
+
+import { Button } from "@/components/ui";
+
 import { cn } from "@/lib/utils";
-import { Button } from "../../components/ui";
 
 const rangType = [
   {
@@ -35,7 +38,9 @@ export default function Home() {
                 functional spaces. Let a piece of furniture you select express
                 your identity and reflect your modern lifestyle.
               </p>
-              <Button size="large" className="px-20 py-6">BUY NOW</Button>
+              <Button size="large" className="px-20 py-6">
+                BUY NOW
+              </Button>
             </div>
           </div>
         </div>
@@ -64,6 +69,55 @@ export default function Home() {
               </span>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="container my-14">
+        <div className="flex w-full flex-col items-center justify-center">
+          <h1 className="mb-8 text-center text-[40px] font-bold text-gray-500">
+            Our Products
+          </h1>
+          <ul className="grid grid-cols-4 gap-8">
+            <li className="overflow-hidden">
+              <div className="group relative h-[446px] w-full min-w-[285px]">
+                <Image
+                  width={285}
+                  height={301}
+                  src={"/images/syltherine.svg"}
+                  alt=""
+                  className="object-cover"
+                />
+                <div className="absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center opacity-0 transition duration-300 group-hover:opacity-100">
+                  <Button variant="outline" className="mb-6 w-[200px]">
+                    Outline
+                  </Button>
+                  <div className="inline-flex cursor-pointer space-x-5 text-white">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                  </div>
+                </div>
+                <div className="absolute left-0 top-0 h-full w-full bg-gray-500 bg-opacity-70 opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="h-[145px] bg-gray-white p-4">
+                  <div className="flex flex-col">
+                    <div className="mb-2 text-2xl font-semibold text-gray-500">
+                      Syltherine
+                    </div>
+                    <div className="font-medium text-gray-300">
+                      Stylish cafe chair
+                    </div>
+                    <div className="inline-flex space-x-2">
+                      <div className="text-xl font-semibold text-gray-500">
+                        Rp 2.500.000
+                      </div>
+                      <div className="flex items-end text-base text-gray-100 line-through">
+                        Rp 3.500.000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </>
