@@ -67,12 +67,12 @@
     --ring: 212.7 26.8% 83.9%;
   }
 
-  .product-price {
+  /* .product-price {
     @apply mr-2.5 text-3xl font-normal uppercase not-italic leading-[34px];
   }
   .product-price + .product-price {
     @apply flex items-end text-base font-normal uppercase not-italic leading-[125%] line-through;
-  }
+  } */
 }
 
 @layer base {
