@@ -30,23 +30,30 @@ const ProductItem = ({
   return (
     <>
       <div
-        className={cn("inline-flex flex-row items-center gap-2 text-gray-500")}
+        className={cn(
+          "inline-flex flex-row items-baseline gap-2 text-gray-500",
+        )}
       >
-        {discount ? (
+        {specialPrice ? (
           <>
-            {specialPrice && (
-              <>
-                <h4>$ {specialPrice}</h4>
-                <span className="text-gray-100 line-through">$ {price}</span>
-              </>
-            )}
+            <span className="text-xl font-semibold">$ {specialPrice}</span>
+            <span className="text-base text-gray-100 line-through">
+              $ {price}
+            </span>
           </>
         ) : (
-          <>
-            <h4>$ {price}</h4>
-          </>
+          <span className="text-xl font-semibold">$ {price}</span>
         )}
       </div>
+
+      {/* <div className="inline-flex flex-row">
+        {specialPrice && <div className="product-price">{specialPrice}</div>}
+        {price && (
+          <div className="product-price">
+            {price}
+          </div>
+        )}
+      </div> */}
     </>
     // <li className="overflow-hidden">
     //   <div className="group relative h-[301px] w-full min-w-[285px]">

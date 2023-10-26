@@ -23,6 +23,16 @@ const rangType = [
 
 const mock = [
   {
+    id: "opmsdpfm",
+    img: "/images/syltherine.svg",
+    discount: 0,
+    newProducts: false,
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: 119.99,
+    specialPrice: null,
+  },
+  {
     id: "asdasdasdasd",
     img: "/images/syltherine.svg",
     discount: 30,
