@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import {
-  AccountAlert,
+  AccountAlertIcon,
   HamburgerIcon,
   HeartIcon,
   SearchIcon,
@@ -47,7 +47,7 @@ const SiteHeader = () => {
           </Link>
         </nav>
         <div className="flex items-center space-x-10 max-lg:hidden">
-          <AccountAlert className="h-7 w-7 fill-current text-black" />
+          <AccountAlertIcon className="h-7 w-7 fill-current text-black" />
           <SearchIcon className="h-7 w-7 fill-none" />
           <HeartIcon className="h-7 w-7 fill-none" />
           <ShoppingCartIcon className="h-7 w-7 fill-none" />

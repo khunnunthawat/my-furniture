@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-const AccountAlert = (props: SVGProps<SVGSVGElement>) => {
+const AccountAlertIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}
@@ -14,4 +14,4 @@ const AccountAlert = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default AccountAlert;
+export default AccountAlertIcon;

@@ -38,12 +38,13 @@ module.exports = {
         },
         secondary: "#FFF3E3",
         gray: {
+          white: "#F4F5F7",
           100: "#9F9F9F",
           300: "#666666",
           500: "#333333",
         },
         success: {
-          500: "#9F9F9F",
+          500: "#2EC1AC",
         },
         danger: {
           500: "#E97171",

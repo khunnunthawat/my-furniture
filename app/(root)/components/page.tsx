@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui";
-import { AccountAlert } from "@/components/icons";
+import { AccountAlertIcon } from "@/components/icons";
 
 export default function ComponentsPage() {
   return (
-    <div className="bg-slate-200 flex min-h-screen">
+    <div className="flex min-h-screen bg-slate-200">
       <div className="container py-14">
         <span>button primary</span>
         <div className="mb-14 flex flex-row space-x-4">
@@ -92,19 +92,19 @@ export default function ComponentsPage() {
         <p>icon</p>
         <div className="mb-14 flex flex-row space-x-4">
           <Button size="icon" shape="circle">
-            <AccountAlert className="fill-current" />
+            <AccountAlertIcon className="fill-current" />
           </Button>
           <Button size="icon" shape="circle" variant="secondary">
-            <AccountAlert className="fill-current" />
+            <AccountAlertIcon className="fill-current" />
           </Button>
           <Button size="icon" shape="circle" variant="ghost">
-            <AccountAlert className="fill-current" />
-          </Button>{" "}
+            <AccountAlertIcon className="fill-current" />
+          </Button>
           <Button size="icon" shape="circle" variant="outline">
-            <AccountAlert className="fill-current" />
+            <AccountAlertIcon className="fill-current" />
           </Button>
           <Button size="icon" link shape="circle" variant="outline">
-            <AccountAlert className="fill-current" />
+            <AccountAlertIcon className="fill-current" />
           </Button>
         </div>
       </div>
