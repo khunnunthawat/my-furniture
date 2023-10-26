@@ -44,7 +44,7 @@ module.exports = {
           500: "#333333",
         },
         success: {
-          500: "#9F9F9F",
+          500: "#2EC1AC",
         },
         danger: {
           500: "#E97171",

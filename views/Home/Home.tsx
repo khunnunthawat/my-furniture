@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui";
 import { CompareIcon, FavoriteIcon, ShareIcon } from "@/components/icons";
+import { ProductItem } from "@/components/Product";
 
 import { cn } from "@/lib/utils";
 
@@ -20,10 +21,43 @@ const rangType = [
   },
 ];
 
+const mock = [
+  {
+    id: "asdasdasdasd",
+    img: "/images/syltherine.svg",
+    discount: 30,
+    newProducts: false,
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: 119.99,
+    specialPrice: 89.99,
+  },
+  {
+    id: "gdfgdfgdfg",
+    img: "/images/leviosa.svg",
+    discount: null,
+    newProducts: true,
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: 119.99,
+    specialPrice: null,
+  },
+  {
+    id: "gdfgdfgdfg",
+    img: "/images/leviosa.svg",
+    discount: null,
+    newProducts: false,
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: 119.99,
+    specialPrice: null,
+  },
+];
+
 export default function Home() {
   return (
     <>
-      <div className="relative mb-14 flex h-[716px] w-full items-center justify-end bg-interior bg-cover bg-center">
+      {/* <div className="relative mb-14 flex h-[716px] w-full items-center justify-end bg-interior bg-cover bg-center">
         <div className="container flex md:absolute md:justify-center lg:justify-end xl:static xl:right-6">
           <div className="bg-secondary px-10 pb-6 pt-8 md:pb-9 md:pt-16">
             <div className="flex max-w-[674px] flex-col items-start">
@@ -71,63 +105,25 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="container my-14">
         <div className="flex w-full flex-col items-center justify-center">
           <h1 className="mb-8 text-center text-[40px] font-bold text-gray-500">
             Our Products
           </h1>
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
-            {Array.from(Array(8).keys()).map((_, idx: number) => (
-              <li className="overflow-hidden" key={idx}>
-                <div className="group relative h-[301px] w-full min-w-[285px]">
-                  <Image
-                    width={285}
-                    height={301}
-                    src={"/images/syltherine.svg"}
-                    alt=""
-                    className="object-cover"
-                  />
-                  <div className="absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center px-4 opacity-0 transition duration-300 group-hover:opacity-100">
-                    <Button variant="outline" className="mb-6 w-[200px]">
-                      Outline
-                    </Button>
-                    <div className="inline-flex space-x-5 text-white">
-                      <div className="inline-flex cursor-pointer items-center">
-                        <ShareIcon className="mr-1 fill-current" />
-                        Share
-                      </div>
-                      <div className="inline-flex cursor-pointer items-center">
-                        <CompareIcon className="mr-1 fill-current" />
-                        Compare
-                      </div>
-                      <div className="inline-flex cursor-pointer items-center">
-                        <FavoriteIcon className="mr-1" />
-                        Like
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute left-0 top-0 h-full w-full bg-gray-500 bg-opacity-70 opacity-0 transition duration-500 group-hover:opacity-100" />
-                </div>
-                <div className="h-[145px] bg-gray-white p-4">
-                  <div className="flex flex-col">
-                    <div className="mb-2 cursor-pointer text-2xl font-semibold text-gray-500 hover:text-primary-500">
-                      Syltherine
-                    </div>
-                    <div className="font-medium text-gray-300">
-                      Stylish cafe chair
-                    </div>
-                    <div className="inline-flex space-x-2">
-                      <div className="text-xl font-semibold text-gray-500">
-                        Rp 2.500.000
-                      </div>
-                      <div className="flex items-end text-base text-gray-100 line-through">
-                        Rp 3.500.000
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            {mock.map((product) => (
+              <ProductItem
+                key={product.id}
+                id={product.id}
+                img={product.img}
+                discount={product.discount}
+                newProducts={product.newProducts}
+                name={product.name}
+                description={product.description}
+                price={product.price}
+                specialPrice={product.specialPrice}
+              />
             ))}
           </ul>
         </div>
@@ -135,3 +131,18 @@ export default function Home() {
     </>
   );
 }
+
+// {
+//   Array.from(Array(4).keys()).map((_) => (
+//     <ProductItem
+//       id={""}
+//       img={"/images/syltherine.svg"}
+//       discount={30}
+//       newProducts={true}
+//       name={"Syltherine"}
+//       description={"Stylish cafe chair"}
+//       price={2500}
+//       specialPrice={3500}
+//     />
+//   ));
+// }
