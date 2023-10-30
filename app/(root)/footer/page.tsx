@@ -18,7 +18,7 @@ const navigation = {
 
 export default function FooterPage() {
   return (
-    <footer className="debug-screens">
+    <footer>
       <div className="container">
         <div className="mb-16 xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-2 md:space-y-4">
