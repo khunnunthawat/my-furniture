@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { Button } from "@/components/ui";
+import { Button, Input } from "@/components/ui";
 
 const navigation = {
   links: [
@@ -63,22 +63,23 @@ const Footer = () => {
             </div>
             <div className="space-y-2 md:space-y-4">
               <h3 className="h-8 font-medium text-gray-100">Newsletter</h3>
-              <form className="sm:flex sm:max-w-md">
-                <input
+              <div className="sm:flex">
+                <Input
                   type="email"
                   name="email-address"
                   id="email-address"
                   autoComplete="email"
-                  required
-                  className="w-full min-w-0 appearance-none text-sm"
+                  className="mb-4 w-full appearance-none xs:max-w-[300px] sm:mb-0"
                   placeholder="Enter Your Email Address"
+                  variant="link"
+                  sizeInput="small"
                 />
-                <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                  <Button link underline className="text-sm">
+                <div className="flex sm:ml-4 sm:flex-shrink-0">
+                  <Button link className="border-b border-gray-500 text-sm">
                     SUBSCRIBE
                   </Button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

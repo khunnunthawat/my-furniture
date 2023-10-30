@@ -1,3 +1,4 @@
 import SiteHeader from "./SiteHeader";
+import Footer from "./Footer";
 
-export { SiteHeader };
+export { SiteHeader, Footer };
