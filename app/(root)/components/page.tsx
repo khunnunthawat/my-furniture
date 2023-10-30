@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button, Input } from "@/components/ui";
 import { AccountAlertIcon } from "@/components/icons";
 
 export default function ComponentsPage() {
@@ -106,6 +106,19 @@ export default function ComponentsPage() {
           <Button size="icon" link shape="circle" variant="outline">
             <AccountAlertIcon className="fill-current" />
           </Button>
+        </div>
+        <p>Input</p>
+        <div className="mb-14 flex flex-row space-x-4">
+          <Input
+            type="email"
+            name="email-address"
+            id="email-address"
+            autoComplete="email"
+            required
+            className="w-full appearance-none bg-transparent xs:max-w-[300px]"
+            placeholder="Enter Your Email Address"
+            variant="link"
+          />
         </div>
       </div>
     </div>

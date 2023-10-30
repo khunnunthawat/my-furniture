@@ -9,7 +9,7 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from "@/components/icons";
-import logo from '@/public/images/furniro-logo.svg'
+import logo from "@/public/images/furniro-logo.svg";
 
 const SiteHeader = () => {
   return (
@@ -17,7 +17,13 @@ const SiteHeader = () => {
       <div className="container flex h-20 items-center justify-between space-x-4 sm:space-x-0">
         <Link href="/" className="cursor-pointer">
           <div className="flex items-center space-x-2">
-            <Image src={logo} alt="furniro logo" width={45} height={28} />
+            <Image
+              src={logo}
+              alt="furniro logo"
+              width={45}
+              height={28}
+              draggable={false}
+            />
             <span className="hidden font-montserrat text-2xl md:inline-block">
               Furniro
             </span>
@@ -53,7 +59,7 @@ const SiteHeader = () => {
           <ShoppingCartIcon className="h-7 w-7 fill-none" />
         </div>
         <div className="hidden cursor-pointer max-lg:block">
-          <HamburgerIcon className="h-6 w-6"/>
+          <HamburgerIcon className="h-6 w-6" />
         </div>
       </div>
     </header>

@@ -19,7 +19,7 @@ const buttonVariants = cva(
           "hover:border-primary-500/75 hover:text-primary-500/75 text-primary-500 border-primary-500 border bg-white",
         outline:
           "text-primary-500 bg-white hover:border-gray-500/75 hover:bg-white hover:text-gray-500/75",
-        link: "hover:text-primary-500 text-sm underline underline-offset-4",
+        link: "hover:text-primary-500 text-sm",
       },
       size: {
         default: "h-12 px-6 py-3 text-base",
@@ -68,11 +68,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
+          className,
           link
             ? "hover:text-primary-500" &&
                 underline &&
                 "underline underline-offset-4"
-            : buttonVariants({ variant, size, shape, className }),
+            : buttonVariants({ variant, size, shape }),
           "transition-colors",
         )}
         ref={ref}
