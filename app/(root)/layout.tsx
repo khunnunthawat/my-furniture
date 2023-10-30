@@ -5,7 +5,10 @@ import { Poppins } from "next/font/google";
 
 import Furniro from "../furniro-logo.ico";
 
-import SiteHeader from "@/components/layout/SiteHeader";
+import { SiteHeader, Footer } from "@/components/layout";
+// const SiteHeader = dynamic(() => import("@/components/layout/SiteHeader"), {
+//   ssr: false,
+// });
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,6 +32,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <SiteHeader />
         <main className="flex min-h-screen flex-col">{children}</main>
+        <Footer />
       </body>
     </html>
   );
