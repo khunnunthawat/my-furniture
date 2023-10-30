@@ -5,7 +5,10 @@ import { Poppins } from "next/font/google";
 
 import Furniro from "../furniro-logo.ico";
 
-import SiteHeader from "@/components/layout/SiteHeader";
+import { SiteHeader } from "@/components/layout";
+// const SiteHeader = dynamic(() => import("@/components/layout/SiteHeader"), {
+//   ssr: false,
+// });
 
 const poppins = Poppins({
   subsets: ["latin"],
