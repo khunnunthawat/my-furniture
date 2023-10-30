@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 
 import Furniro from "../furniro-logo.ico";
 
-import { SiteHeader } from "@/components/layout";
+import { SiteHeader, Footer } from "@/components/layout";
 // const SiteHeader = dynamic(() => import("@/components/layout/SiteHeader"), {
 //   ssr: false,
 // });
@@ -32,6 +32,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <SiteHeader />
         <main className="flex min-h-screen flex-col">{children}</main>
+        <Footer />
       </body>
     </html>
   );
