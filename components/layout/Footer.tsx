@@ -19,7 +19,7 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="debug-screens">
+    <footer className="border-t border-gray-200 py-8">
       <div className="container">
         <div className="mb-16 xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-2 md:space-y-4">
@@ -69,7 +69,7 @@ const Footer = () => {
                   name="email-address"
                   id="email-address"
                   autoComplete="email"
-                  className="mb-4 w-full appearance-none xs:max-w-[300px] sm:mb-0"
+                  className="mb-4 w-full appearance-none px-0 xs:max-w-[300px] sm:mb-0"
                   placeholder="Enter Your Email Address"
                   variant="link"
                   sizeInput="small"
