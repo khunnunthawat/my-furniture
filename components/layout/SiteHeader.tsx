@@ -18,6 +18,7 @@ const SiteHeader = () => {
               alt="furniro logo"
               width={45}
               height={28}
+              draggable={false}
               style={{ width: "auto", height: "auto" }}
             />
             <span className="hidden font-montserrat text-2xl md:inline-block">

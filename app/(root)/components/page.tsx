@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui";
+import { Search } from "lucide-react";
+
+import { Button, Input } from "@/components/ui";
 import { AccountAlertIcon } from "@/components/icons";
 
 export default function ComponentsPage() {
   return (
-    <div className="flex min-h-screen bg-slate-200">
+    <div className="flex min-h-screen">
       <div className="container py-14">
         <span>button primary</span>
         <div className="mb-14 flex flex-row space-x-4">
@@ -106,6 +108,72 @@ export default function ComponentsPage() {
           <Button size="icon" link shape="circle" variant="outline">
             <AccountAlertIcon className="fill-current" />
           </Button>
+        </div>
+        <p>Input</p>
+        <div className="mb-14 flex max-w-[300px] flex-col gap-8">
+          <Input
+            type="email"
+            name="email-address"
+            id="email-address"
+            autoComplete="email"
+            className="w-full appearance-none bg-transparent xs:max-w-[300px]"
+            placeholder="Enter Your Email Address"
+            variant="link"
+            sizeInput="small"
+          />
+          <Input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter Your First Name"
+            sizeInput="small"
+          />
+          <Input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter Your First Name"
+          />
+          <Input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter Your First Name"
+            sizeInput="middle"
+          />
+          <Input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter Your First Name"
+            sizeInput="large"
+          />
+          <div className="max-w-[300px]">
+            <label
+              htmlFor="name"
+              className="mb-2 block text-sm font-medium text-gray-700"
+            >
+              Name
+            </label>
+            <Input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div className="relative mt-1 rounded-md shadow-sm">
+            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <Search className="h-5 w-5 text-gray-100" aria-hidden="true" />
+            </div>
+            <Input type="text" name="name" id="name" className="pl-10" />
+          </div>
+          <div className="relative mt-1 rounded-md shadow-sm">
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+              <Search className="h-5 w-5 text-gray-100" aria-hidden="true" />
+            </div>
+            <Input type="text" name="name" id="name" className="pr-10" />
+          </div>
         </div>
       </div>
     </div>
