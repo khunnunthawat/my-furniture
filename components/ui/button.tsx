@@ -73,7 +73,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ? "hover:text-primary-500" &&
                 underline &&
                 "underline underline-offset-4"
-            : buttonVariants({ variant, size, shape }),
+            : buttonVariants({ variant, size, shape, className }),
           "transition-colors",
         )}
         ref={ref}

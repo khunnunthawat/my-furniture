@@ -31,7 +31,6 @@ export default function FooterPage() {
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-2 md:space-y-4">
                 <h3 className="h-8 font-medium text-gray-100">Links</h3>
-                {/* text-muted-foreground */}
                 <ul role="list" className="list-none space-y-4">
                   {navigation.links.map((item) => (
                     <li key={item.name}>
@@ -63,23 +62,23 @@ export default function FooterPage() {
             </div>
             <div className="space-y-2 md:space-y-4">
               <h3 className="h-8 font-medium text-gray-100">Newsletter</h3>
-              <form className="sm:flex sm:max-w-md">
+              <div className="sm:flex">
                 <Input
                   type="email"
                   name="email-address"
                   id="email-address"
                   autoComplete="email"
-                  required
                   className="mb-4 w-full appearance-none xs:max-w-[300px] sm:mb-0"
                   placeholder="Enter Your Email Address"
                   variant="link"
+                  sizeInput="small"
                 />
                 <div className="flex sm:ml-4 sm:flex-shrink-0">
                   <Button link className="border-b border-gray-500 text-sm">
                     SUBSCRIBE
                   </Button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
