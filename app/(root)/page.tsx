@@ -1,11 +1,30 @@
-// import { Banner, Content, OurProduct } from "../../views/home";
+import dynamic from "next/dynamic";
 
-// import Banner from "../../views/home/Banner";
-// import Content from "../../views/home/Content";
-// import OurProduct from "../../views/home/OurProduct";
 import { Button } from "@/components/ui";
+import { ProductItem } from "@/components/Product";
 
-import RoomInspiration from "../../views/home/RoomInspiration";
+import { cn } from "@/lib/utils";
+
+import { mockProducts } from "@/data/products";
+
+const RoomInspiration = dynamic(() => import("@/views/home/RoomInspiration"), {
+  ssr: false,
+});
+
+const rangType = [
+  {
+    label: "dining",
+    picture: "bg-type-dining",
+  },
+  {
+    label: "living",
+    picture: "bg-type-living",
+  },
+  {
+    label: "bedroom",
+    picture: "bg-type-bedroom",
+  },
+];
 
 export default function HomePage() {
   return (
@@ -32,8 +51,57 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* <Content /> */}
-      {/* <OurProduct /> */}
+      <div className="mb-14 w-full">
+        <div className="mx-auto mb-16 max-w-lg text-center">
+          <div className="mb-2 text-3xl font-bold text-gray-500">
+            Browse The Range
+          </div>
+          <p className="text-gray-300">
+            Explore our range of home furniture to find everything you need to
+            transform your bedroom into the perfect cosy retreat.
+          </p>
+        </div>
+        <div className="mx-auto grid max-w-none gap-5 lg:grid-cols-3 xl:max-w-[1183px]">
+          {rangType.map((item, idx) => (
+            <div key={idx} className="flex flex-col">
+              <div
+                className={cn(
+                  "mb-6 h-[480px] w-full flex-shrink-0 bg-cover bg-center",
+                  item.picture,
+                )}
+              />
+              <span className="flex justify-center text-2xl font-medium capitalize text-gray-500">
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container mb-14">
+        <div className="flex w-full flex-col items-center justify-center">
+          <h1 className="mb-8 text-center text-[40px] font-bold text-gray-500">
+            Our Products
+          </h1>
+          <ul className="grid list-none gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
+            {mockProducts.map((product) => (
+              <ProductItem
+                key={product.id}
+                id={product.id}
+                img={product.img}
+                discount={product.discount}
+                newProducts={product.newProducts}
+                name={product.name}
+                description={product.description}
+                price={product.price}
+                specialPrice={product.specialPrice}
+              />
+            ))}
+          </ul>
+          <Button className="mt-8 min-w-[245px]" variant="secondary">
+            Show More
+          </Button>
+        </div>
+      </div>
       <RoomInspiration />
     </>
   );
