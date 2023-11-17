@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Banner />
@@ -88,4 +88,6 @@ export default function Home() {
       </div> */}
     </>
   );
-}
+};
+
+export default Home;
