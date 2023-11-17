@@ -1,30 +1,17 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui";
+// import { Button } from "@/components/ui";
 
-import Banner from "./Banner";
-import Content from "./Content";
-import OurProduct from "./OurProduct";
+import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Banner />
       <Content />
       <OurProduct />
-      <div className="mb-14 flex h-[670px] w-full flex-row items-center bg-secondary">
-        <div className="mx-auto max-w-md pr-8">
-          <h1 className="mb-1.5 whitespace-pre-line text-4xl font-bold text-gray-500">
-            {`50+ Beautiful rooms\ninspiration`}
-          </h1>
-          <p className="mb-6">
-            {`Our designer already made a lot of beautiful\n prototipe of rooms that
-            inspire you`}
-          </p>
-          <Button className="min-w-[176px]">Explore More</Button>
-        </div>
-      </div>
-      <div className="mb-14">
+      <RoomInspiration />
+      {/* <div className="mb-14">
         <div className="mb-4 flex flex-col items-center">
           <span className="mb-2 text-xl font-semibold text-gray-100">
             Share your setup with
@@ -33,7 +20,7 @@ export default function Home() {
             #FuniroFurniture
           </span>
         </div>
-        <div className=" inline-flex w-full columns-2 gap-4 overflow-hidden p-4 md:columns-3 lg:columns-4">
+        <div className="inline-flex w-full columns-2 gap-4 overflow-hidden p-4 md:columns-3 lg:columns-4">
           <Image
             width={274}
             height={382}
@@ -98,20 +85,9 @@ export default function Home() {
             className="mb-4"
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
-}
+};
 
-// .container-left {
-//   width: 100%;
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding-right: 2rem/* 32px */;
-//   padding-left: 2rem/* 32px */;
-// }
-// @media (min-width: 1400px) {
-//   .container {
-//     max-width: 1400px;
-//   }
-// }
+export default Home;
