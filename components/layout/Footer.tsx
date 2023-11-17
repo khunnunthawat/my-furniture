@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-100 pt-2 md:pt-8">
+        <div className="border-t border-gray-200 pt-2 md:pt-8">
           <p className="mt-4 text-gray-300 md:mt-6">
             &copy; 2023 furino. All rights reverved.
           </p>
