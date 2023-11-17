@@ -149,8 +149,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     circle,
     #b88e2f 0%,
     #b88e2f 30%,
-    #fff3e3 0%,
-    #fff3e3 0 0.1%
+    transparent,
+    transparent
   );
   border: 1px solid #b88e2f;
   opacity: 1;
