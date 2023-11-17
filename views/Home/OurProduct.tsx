@@ -2,8 +2,8 @@
 
 import React from "react";
 
-import { ProductItem } from "@/components/Product";
 import { Button } from "@/components/ui";
+import { ProductItem } from "@/components/Product";
 
 import { mockProducts } from "@/data/products";
 
