@@ -1,14 +1,14 @@
-"use client";
+// "use client";
 
-import { Banner, Content, OurProduct, RoomInspiration } from "../../views/home";
+// import { Banner, Content, OurProduct, RoomInspiration } from "../../views/home";
 
 export default function HomePage() {
   return (
     <>
-      <Banner />
+      {/* <Banner />
       <Content />
       <OurProduct />
-      <RoomInspiration />
+      <RoomInspiration /> */}
     </>
   );
 }
