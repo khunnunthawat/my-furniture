@@ -1,4 +1,6 @@
-import OurProduct from "./OurProduct";
-import RoomInspiration from "./RoomInspiration";
+import Banner from "./Banner";
+import Content from "./content";
+import OurProduct from "./our-product";
+import RoomInspiration from "./room-inspiration";
 
-export { OurProduct, RoomInspiration };
+export { Banner, Content, OurProduct, RoomInspiration };
