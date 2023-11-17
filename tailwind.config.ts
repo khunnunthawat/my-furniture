@@ -103,6 +103,7 @@ module.exports = {
         "type-dining": "url('/images/type-dining.jpg')",
         "type-living": "url('/images/type-living.jpg')",
         "type-bedroom": "url('/images/type-bedroom.jpg')",
+        "share-setup": "url('/images/share-setup.png')",
       },
     },
   },

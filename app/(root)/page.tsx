@@ -5,6 +5,7 @@ import {
   Content,
   OurProduct,
   RoomInspiration,
+  ShareSetup,
 } from "@/components/section";
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Content />
       <OurProduct />
       <RoomInspiration />
+      <ShareSetup />
     </>
   );
 }
