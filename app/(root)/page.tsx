@@ -1,4 +1,6 @@
-import { Banner, Content, OurProduct } from "../../views/home";
+"use client";
+
+import { Banner, Content, OurProduct, RoomInspiration } from "../../views/home";
 
 export default function HomePage() {
   return (
@@ -6,7 +8,7 @@ export default function HomePage() {
       <Banner />
       <Content />
       <OurProduct />
-      {/* <RoomInspiration /> */}
+      <RoomInspiration />
     </>
   );
 }
