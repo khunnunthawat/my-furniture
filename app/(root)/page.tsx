@@ -1,7 +1,9 @@
+import React from "react";
+
 import { Button } from "@/components/ui";
 import { ProductItem } from "@/components/Product";
 
-import RoomInspiration from "@/views/home/RoomInspiration";
+import RoomInspiration from "@/components/section/RoomInspiration";
 
 import { cn } from "@/lib/utils";
 
