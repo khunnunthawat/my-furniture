@@ -1,12 +1,13 @@
-import { Banner, Content, OurProduct, RoomInspiration } from "../../views/home";
+// import { Banner, Content, OurProduct, RoomInspiration } from "../../views/home";
 
 export default function HomePage() {
   return (
     <>
-      <Banner />
+      Home
+      {/* <Banner />
       <Content />
       <OurProduct />
-      <RoomInspiration />
+      <RoomInspiration /> */}
     </>
   );
 }
