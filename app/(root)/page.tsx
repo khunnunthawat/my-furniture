@@ -1,18 +1,14 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 import { Button } from "@/components/ui";
-import { ProductItem } from "@/components/Product";
+// import { ProductItem } from "@/components/Product";
+
+import OurProduct from "@/views/home/OurProduct";
+import RoomInspiration from "@/views/home/RoomInspiration";
 
 import { cn } from "@/lib/utils";
 
-import { mockProducts } from "@/data/products";
-
-const OurProduct = dynamic(() => import("@/views/home/OurProduct"), {
-  ssr: false,
-});
-const RoomInspiration = dynamic(() => import("@/views/home/RoomInspiration"), {
-  ssr: false,
-});
+// import { mockProducts } from "@/data/products";
 
 const rangType = [
   {
