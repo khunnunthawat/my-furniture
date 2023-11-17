@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui";
+// import { Button } from "@/components/ui";
 
 import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
 
 export default function Home() {
   return (
     <>
-      {/* <Banner />
+      <Banner />
       <Content />
-      <OurProduct /> */}
+      <OurProduct />
       <RoomInspiration />
       {/* <div className="mb-14">
         <div className="mb-4 flex flex-col items-center">
@@ -89,16 +89,3 @@ export default function Home() {
     </>
   );
 }
-
-// .container-left {
-//   width: 100%;
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding-right: 2rem/* 32px */;
-//   padding-left: 2rem/* 32px */;
-// }
-// @media (min-width: 1400px) {
-//   .container {
-//     max-width: 1400px;
-//   }
-// }

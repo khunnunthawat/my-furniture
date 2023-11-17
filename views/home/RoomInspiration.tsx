@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-import { Button } from "@/components/ui";
-import Image from "next/image";
 import { ArrowRight, ChevronRight } from "lucide-react";
+
+import { Button } from "@/components/ui";
 
 const RoomInspiration = () => {
   const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
