@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  Banner,
+  Hero,
   Content,
   OurProduct,
   RoomInspiration,
@@ -10,7 +10,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      <Banner />
+      <Hero />
       <Content />
       <OurProduct />
       <RoomInspiration />

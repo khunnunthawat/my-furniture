@@ -2,7 +2,7 @@ import React from "react";
 
 import { Button } from "@/components/ui";
 
-const Banner = () => {
+const Hero = () => {
   return (
     <div className="relative mb-14 flex h-[716px] w-full items-center justify-end bg-interior bg-cover bg-center">
       <div className="container flex md:absolute md:justify-center lg:justify-end xl:static xl:right-6">
@@ -29,4 +29,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Hero;
