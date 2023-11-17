@@ -52,8 +52,6 @@ const RoomInspiration = () => {
         >
           <SwiperSlide className="rooms__slide">
             <Image
-              width={372}
-              height={485}
               layout="fill"
               src="images/room-1.svg"
               alt="room1"
@@ -80,8 +78,6 @@ const RoomInspiration = () => {
           </SwiperSlide>
           <SwiperSlide className="rooms__slide">
             <Image
-              width={372}
-              height={485}
               layout="fill"
               src="images/room-2.svg"
               alt="room2"
@@ -108,8 +104,6 @@ const RoomInspiration = () => {
           </SwiperSlide>
           <SwiperSlide className="rooms__slide">
             <Image
-              width={372}
-              height={485}
               layout="fill"
               src="images/room-3.svg"
               alt="room3"
@@ -136,8 +130,6 @@ const RoomInspiration = () => {
           </SwiperSlide>
           <SwiperSlide className="rooms__slide">
             <Image
-              width={372}
-              height={485}
               layout="fill"
               src="images/room-4.svg"
               alt="room4"
