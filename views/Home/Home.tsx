@@ -1,16 +1,16 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 // import { Button } from "@/components/ui";
 
-import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
+// import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
 
 const Home = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner />
       <Content />
       <OurProduct />
-      <RoomInspiration />
+      <RoomInspiration /> */}
       {/* <div className="mb-14">
         <div className="mb-4 flex flex-col items-center">
           <span className="mb-2 text-xl font-semibold text-gray-100">

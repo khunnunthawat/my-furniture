@@ -1,5 +1,12 @@
-import { Home } from "@/views/home";
+import { Banner, Content, OurProduct, RoomInspiration } from "@/views/home";
 
 export default function HomePage() {
-  return <Home />;
+  return (
+    <>
+      <Banner />
+      <Content />
+      <OurProduct />
+      <RoomInspiration />
+    </>
+  );
 }
