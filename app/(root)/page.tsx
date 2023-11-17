@@ -1,6 +1,6 @@
 // import { Banner, Content, OurProduct } from "../../views/home";
 
-import Banner from "../../views/home/Banner";
+// import Banner from "../../views/home/Banner";
 // import Content from "../../views/home/Content";
 // import OurProduct from "../../views/home/OurProduct";
 import RoomInspiration from "../../views/home/RoomInspiration";
@@ -8,7 +8,7 @@ import RoomInspiration from "../../views/home/RoomInspiration";
 export default function HomePage() {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       {/* <Content /> */}
       {/* <OurProduct /> */}
       <RoomInspiration />
