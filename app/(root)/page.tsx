@@ -1,16 +1,18 @@
-// import { Banner, Content, OurProduct } from "../../views/home";
+import React from "react";
 
-// import Banner from "../../views/home/Banner";
-// import Content from "../../views/home/Content";
-// import OurProduct from "../../views/home/OurProduct";
-import RoomInspiration from "../../views/home/RoomInspiration";
+import {
+  Hero,
+  Content,
+  OurProduct,
+  RoomInspiration,
+} from "@/components/section";
 
 export default function HomePage() {
   return (
     <>
-      {/* <Banner /> */}
-      {/* <Content /> */}
-      {/* <OurProduct /> */}
+      <Hero />
+      <Content />
+      <OurProduct />
       <RoomInspiration />
     </>
   );
