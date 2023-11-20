@@ -15,8 +15,8 @@ const RoomInspiration = () => {
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
 
   return (
-    <div className="mb-14 flex h-[670px] w-full flex-row items-center bg-secondary">
-      <div className="mx-auto max-w-md whitespace-pre-line">
+    <div className="mb-14 flex h-full w-full flex-col items-center justify-between bg-secondary py-11 lg:flex-row">
+      <div className="mx-8 mb-11 max-w-full text-center md:mx-auto lg:mb-0 lg:max-w-md lg:whitespace-pre-line lg:text-start">
         <h1 className="mb-1.5 text-4xl font-bold text-gray-500">
           {`50+ Beautiful rooms\ninspiration`}
         </h1>
@@ -26,13 +26,16 @@ const RoomInspiration = () => {
         </p>
         <Button className="min-w-[176px]">Explore More</Button>
       </div>
-      <div id="room-slider" className="relative flex h-[580px] w-3/5">
+      <div
+        id="room-slider"
+        className="relative flex h-[580px] w-full pl-8 lg:w-3/5 lg:pl-0"
+      >
         <div
           className="swiper-button-prev opacity-0"
           ref={(e) => setPrevEl(e)}
         />
         <div
-          className="absolute bottom-2/4 right-[20%] z-10 flex h-12 w-full max-w-[48px] cursor-pointer items-center justify-center rounded-full bg-white shadow-lg"
+          className="absolute bottom-2/4 right-[55%] z-10 flex h-12 w-full max-w-[48px] cursor-pointer items-center justify-center rounded-full bg-white shadow-lg lg:right-[28%]"
           ref={(e) => setNextEl(e)}
         >
           <ChevronRight className="text-primary-500" />
