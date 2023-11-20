@@ -10,12 +10,12 @@ import {
 
 export default function HomePage() {
   return (
-    <div className="debug-screens">
+    <>
       <Hero />
       <Content />
       <OurProduct />
       <RoomInspiration />
       <ShareSetup />
-    </div>
+    </>
   );
 }

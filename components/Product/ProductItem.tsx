@@ -3,22 +3,13 @@
 import Image from "next/legacy/image";
 import React from "react";
 
+import { Product } from "@/interface/product";
+
 import { Button } from "@/components/ui";
 import { CompareIcon, FavoriteIcon, ShareIcon } from "@/components/icons";
 import { Price } from "@/components/Product";
 
 import { cn } from "@/lib/utils";
-
-interface ProductItem {
-  id: string;
-  img: string;
-  discount: number | null;
-  newProducts: boolean;
-  name: string;
-  description: string;
-  price: number;
-  specialPrice: number | null;
-}
 
 const ProductItem = ({
   id,
@@ -29,7 +20,7 @@ const ProductItem = ({
   description,
   price,
   specialPrice,
-}: ProductItem) => {
+}: Product) => {
   return (
     <li className="overflow-hidden">
       <div className="group relative h-[301px] w-full min-w-[285px]">
