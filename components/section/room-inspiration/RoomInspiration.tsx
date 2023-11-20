@@ -17,7 +17,7 @@ const RoomInspiration = () => {
   return (
     <div className="h-full w-full bg-secondary">
       <div className="mx-auto mb-14 flex flex-col items-center justify-between lg:flex-row">
-        <div className="mx-8 my-11 max-w-full text-center md:mx-auto lg:my-0 lg:mb-0 lg:max-w-md lg:whitespace-pre-line lg:text-start">
+        <div className="mx-8 my-11 max-w-full text-center md:mx-auto md:mb-0 lg:mb-0 lg:max-w-md lg:whitespace-pre-line lg:text-start">
           <h1 className="mb-1.5 text-4xl font-bold text-gray-500">
             {`50+ Beautiful rooms\ninspiration`}
           </h1>
@@ -65,7 +65,7 @@ const RoomInspiration = () => {
             <SwiperSlide className="rooms__slide">
               <Image
                 layout="fill"
-                src="images/room-1.svg"
+                src="/images/room-1.svg"
                 alt="room1"
                 className="h-full w-full object-cover"
               />
@@ -91,7 +91,7 @@ const RoomInspiration = () => {
             <SwiperSlide className="rooms__slide">
               <Image
                 layout="fill"
-                src="images/room-2.svg"
+                src="/images/room-2.svg"
                 alt="room2"
                 className="h-full w-full object-cover"
               />
@@ -117,7 +117,7 @@ const RoomInspiration = () => {
             <SwiperSlide className="rooms__slide">
               <Image
                 layout="fill"
-                src="images/room-3.svg"
+                src="/images/room-3.svg"
                 alt="room3"
                 className="h-full w-full object-cover"
               />
@@ -143,7 +143,7 @@ const RoomInspiration = () => {
             <SwiperSlide className="rooms__slide">
               <Image
                 layout="fill"
-                src="images/room-4.svg"
+                src="/images/room-4.svg"
                 alt="room4"
                 className="h-full w-full object-cover"
               />
