@@ -15,8 +15,8 @@ const RoomInspiration = () => {
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
 
   return (
-    <div className="mb-14 flex h-full w-full flex-col items-center justify-between bg-secondary py-11 lg:flex-row">
-      <div className="mx-8 mb-11 max-w-full text-center md:mx-auto lg:mb-0 lg:max-w-md lg:whitespace-pre-line lg:text-start">
+    <div className="mb-14 flex h-full w-full flex-col items-center justify-between bg-secondary lg:flex-row">
+      <div className="mx-8 my-11 max-w-full text-center md:mx-auto lg:my-0 lg:mb-0 lg:max-w-md lg:whitespace-pre-line lg:text-start">
         <h1 className="mb-1.5 text-4xl font-bold text-gray-500">
           {`50+ Beautiful rooms\ninspiration`}
         </h1>
@@ -28,18 +28,8 @@ const RoomInspiration = () => {
       </div>
       <div
         id="room-slider"
-        className="relative flex h-[580px] w-full pl-8 lg:w-3/5 lg:pl-0"
+        className="relative mt-0 flex h-[580px] w-full pl-0 md:my-11 md:pl-8 lg:w-3/5 lg:pl-0"
       >
-        <div
-          className="swiper-button-prev opacity-0"
-          ref={(e) => setPrevEl(e)}
-        />
-        <div
-          className="absolute bottom-2/4 right-[55%] z-10 flex h-12 w-full max-w-[48px] cursor-pointer items-center justify-center rounded-full bg-white shadow-lg lg:right-[28%]"
-          ref={(e) => setNextEl(e)}
-        >
-          <ChevronRight className="text-primary-500" />
-        </div>
         <Swiper
           className="h-full w-full"
           navigation={{ prevEl, nextEl }}
@@ -52,7 +42,25 @@ const RoomInspiration = () => {
           scrollbar
           freeMode
           resistanceRatio={0}
+          breakpoints={{
+            360: {
+              centeredSlides: true,
+            },
+            768: {
+              centeredSlides: false,
+            },
+          }}
         >
+          <div
+            className="swiper-button-prev hidden opacity-0"
+            ref={(e) => setPrevEl(e)}
+          />
+          <div
+            className="absolute bottom-2/4 right-[308px] z-10 hidden h-12 w-full max-w-[48px] cursor-pointer items-center justify-center rounded-full bg-white shadow-lg md:flex lg:right-[348px]"
+            ref={(e) => setNextEl(e)}
+          >
+            <ChevronRight className="text-primary-500" />
+          </div>
           <SwiperSlide className="rooms__slide">
             <Image
               layout="fill"
