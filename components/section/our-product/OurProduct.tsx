@@ -12,7 +12,7 @@ const OurProduct = () => {
         <h1 className="mb-8 text-center text-[40px] font-bold text-gray-500">
           Our Products
         </h1>
-        <ul className="grid list-none gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
+        <ul className="grid list-none grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
           {mockProducts.map((product) => (
             <ProductItem
               key={product.id}
