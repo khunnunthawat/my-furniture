@@ -1,4 +1,6 @@
-export const mockProducts = [
+import { Product } from "@/interface/product";
+
+export const mockProducts: Product[] = [
   {
     id: "2e62c8c6-1b69-4b04-aecf-5e5e38789127",
     img: "/images/syltherine.svg",

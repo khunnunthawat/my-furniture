@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Product } from "@/interface/product";
+
 import { Button } from "@/components/ui";
 import { ProductItem } from "@/components/Product";
 
@@ -13,7 +15,7 @@ const OurProduct = () => {
           Our Products
         </h1>
         <ul className="grid list-none grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
-          {mockProducts.map((product) => (
+          {mockProducts.map((product: Product) => (
             <ProductItem
               key={product.id}
               id={product.id}
